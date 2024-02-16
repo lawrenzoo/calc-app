@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-color: hsl(222, 26%, 31%);
+}
+
+.calc-themes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calc-text>p{
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+}
+.theme-container{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    gap: 20px;
+}
+.theme-text{
+    color: white;
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.num{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:8px;
+}
+.num p{
+    color: white;
+    cursor: pointer;
+}
+.circles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+    border-radius: 18px;
+    background-color:  hsl(223, 31%, 20%);
+    padding: 5px;
+    transition: color 0.5s ease;
+}
+.circle1{
+    width: 18px;
+    height: 18px;
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 50%;
+}
+.circle2{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+.circle3{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.screen-input input[type = 'text']{
+    border-radius: 10px;
+    width: 100%;
+    background-color: hsl(224, 36%, 15%);
+    height: 85px;
+    margin-top:20px;
+    margin-bottom:20px;
+    border: none;
+    color: white;
+    font-size: 32px;
+    text-align: right;
+    padding-right:10px;
+}
+.btn-bkground{
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    gap: 20px;
+    padding: 20px;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+}
+.btn{
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 32px;
+    width: 85px;
+    font-weight: bolder;
+    color:hsl(221, 14%, 31%);
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0px 5px 0px 0px hsl(29, 21%, 59%);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+}
+.reset {
+    grid-column: span 2;
+    width: 100%;
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 5px 0px 0px hsl(224, 28%, 35%);
+    color: white;
+
+}
+.equal {
+    grid-column: span 2;
+    width: 100%;
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 5px 0px 0px hsl(6, 70%, 34%);
+    color: white;
+}
+.delete{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 5px 0px 0px hsl(224, 28%, 35%);
+    color: white;
+}
+.reset:hover, .delete:hover{
+    background-color: hsl(225, 37%, 57%);
+}
+.equal:hover{
+    background-color:hsl(6, 86%, 61%) ;
+}
+
+
+
+
+/* responsive page at 375px(mobile) */
+@media (max-width:500px) {
+   body{
+    height: 100svh;
+   } 
+   .theme-container{
+    gap:15px;
+}
+.theme-text{
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+.num{
+    padding:5px;
+    font-size: 10px;
+}
+.circles{
+    width: 50px;
+    border-radius: 14px;
+    background-color:  hsl(223, 31%, 20%);
+    padding: 3px;
+    transition: color 0.5s ease;
+}
+.circle1{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+.circle2{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+.circle3{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.screen-input input[type = 'text']{
+    border-radius: 7px;
+    height: 80px;
+    margin-top:14px;
+    margin-bottom:14px;
+    font-size: 27px;
+}
+.btn-bkground{
+    gap: 15px;
+    padding: 20px;
+    border-radius: 7px;
+}
+.btn{
+    font-size: 23px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reset {
+    width: 100%;
+    color: white;
+
+}
+.equal {
+    grid-column: span 2;
+    width: 100%;
+
+}
+}
