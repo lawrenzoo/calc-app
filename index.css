@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100svh;
+    height: 100vh;
     background-color: hsl(222, 26%, 31%);
 }
 
@@ -143,9 +143,6 @@ body{
 
 /* responsive page at 375px(mobile) */
 @media (max-width:500px) {
-   body{
-    height: 100svh;
-   } 
    .theme-container{
     gap:15px;
 }
